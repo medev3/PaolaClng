@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Paola Cleaning brand tokens (from PaolaCleaning tailwind palette).
+  Adjust HSL values here to retheme the site.
+
+  Key hex references:
+  - Accent / primary: #85aebe
+  - Navy: #0e123b
+  - Deep background: #070820
+  - Surface: #0B132A
+  - Muted text: #4F5665
+  - Success: #2FAB73
+*/
+
+:root {
+  --font-heading: "Roboto", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+
+  --background: 234 43% 8%;
+  --foreground: 0 0% 97%;
+  --card: 222 58% 11%;
+  --card-foreground: 0 0% 97%;
+  --popover: 222 58% 11%;
+  --popover-foreground: 0 0% 97%;
+  --primary: 199 28% 63%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 234 52% 15%;
+  --secondary-foreground: 0 0% 97%;
+  --muted: 222 45% 14%;
+  --muted-foreground: 220 13% 58%;
+  --accent: 234 52% 15%;
+  --accent-foreground: 0 0% 97%;
+  --success: 152 58% 46%;
+  --success-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 222 30% 20%;
+  --input: 222 30% 18%;
+  --ring: 199 28% 63%;
+  --radius: 0.5rem;
+
+  /* Section bands — alternate base (deeper) vs alt (soft gray lift) */
+  --section-base: 234 43% 8%;
+  --section-alt: 234 30% 11%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .section-glow {
+    background-image: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      hsl(var(--primary) / 0.12),
+      transparent 70%
+    );
+  }
+
+  .section-surface-base {
+    background-color: hsl(var(--section-base));
+  }
+
+  .section-surface-alt {
+    background-color: hsl(var(--section-alt));
+  }
+
+  /* Soft blend at section edges (optional, stacked on surface classes) */
+  .section-band-top {
+    box-shadow: inset 0 1px 0 0 hsl(var(--border) / 0.45);
+  }
+
+  .section-band-bottom {
+    box-shadow: inset 0 -1px 0 0 hsl(var(--border) / 0.35);
+  }
+}
