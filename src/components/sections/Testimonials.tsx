@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 export function Testimonials() {
   return (
     <section
-      className="px-6 lg:px-8 py-20 bg-section-base section-band-top section-band-bottom relative overflow-hidden"
+      className="px-6 lg:px-8 py-20 bg-section-alt section-band-top section-band-bottom relative overflow-hidden"
     >
       <div
         className="pointer-events-none absolute right-0 top-1/4 h-64 w-64 rounded-full bg-primary/5 blur-3xl"
