@@ -250,9 +250,10 @@ export function Projects() {
             Real projects across Georgia
           </h2>
           <p className="text-muted-foreground font-body text-base md:text-lg leading-relaxed">
-            Cleaning, construction turnarounds, drywall, acoustic ceilings, floor
-            work, painting, and full home repairs — documented with before and
-            after photos from recent jobs.
+            As a licensed general contractor, we handle cleaning, construction
+            turnarounds, drywall, acoustic ceilings, floor work, painting, and full
+            home repairs — documented with before and after photos from recent jobs
+            across Georgia.
           </p>
         </div>
 

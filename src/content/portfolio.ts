@@ -59,18 +59,56 @@ const arregloPairs: BeforeAfterPair[] = [
   },
 ];
 
-const limpiezaCasa2Pairs: BeforeAfterPair[] = [1, 2, 3, 4, 5, 6, 7].map((n) => ({
-  id: `casa-${n}`,
-  label: `Room ${n}`,
-  before: assetPath("limpieza_casa_2", "antes", `casa_${n}.jpeg`),
-  after: assetPath("limpieza_casa_2", "despues", `casa_${n}.jpeg`),
-}));
+const limpiezaCasa2Pairs: BeforeAfterPair[] = [
+  {
+    id: "casa-1",
+    label: "Room 1",
+    before: assetPath("limpieza_casa_2", "antes", "casa_1.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_3.jpeg"),
+  },
+  {
+    id: "casa-2",
+    label: "Room 2",
+    before: assetPath("limpieza_casa_2", "antes", "casa_9.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_2.jpeg"),
+  },
+  {
+    id: "casa-3",
+    label: "Room 3",
+    before: assetPath("limpieza_casa_2", "antes", "casa_3.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_3.jpeg"),
+  },
+  {
+    id: "casa-4",
+    label: "Room 4",
+    before: assetPath("limpieza_casa_2", "antes", "casa_8.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_4.jpeg"),
+  },
+  {
+    id: "casa-5",
+    label: "Room 5",
+    before: assetPath("limpieza_casa_2", "antes", "casa_5.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_7.jpeg"),
+  },
+  {
+    id: "casa-6",
+    label: "Room 6",
+    before: assetPath("limpieza_casa_2", "antes", "casa_6.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_6.jpeg"),
+  },
+  {
+    id: "casa-7",
+    label: "Room 7",
+    before: assetPath("limpieza_casa_2", "antes", "casa_7.jpeg"),
+    after: assetPath("limpieza_casa_2", "despues", "casa_5.jpeg"),
+  },
+];
 
 export const portfolioOwner = {
   name: "Paola",
   role: "Founder · PA. Cleaning & Construction",
   bio:
-    "From deep residential cleans to construction turnarounds, acoustic ceiling work, and full interior repairs — Paola leads every job with the same standard: documented scope, respectful crews, and spaces that are ready to use when we leave.",
+    "Licensed general contractor in Georgia — from deep residential cleans to construction turnarounds, acoustic ceiling work, and full interior repairs. Paola leads every job with documented scope, respectful crews, and spaces that are ready to use when we leave.",
   images: [
     assetPath("personal", "pose_urbano_parque.jpeg"),
     assetPath("personal", "pose_urbano_baranda.jpeg"),
@@ -86,7 +124,7 @@ export const portfolioItems: PortfolioItem[] = [
     location: "Georgia",
     featured: true,
     summary:
-      "Arreglo de casa por dentro y por fuera — cocinas, baños, habitaciones y áreas comunes restauradas para vivir o entregar con confianza.",
+      "Complete interior and exterior home repair — kitchens, baths, bedrooms, and common areas restored so you can move in or hand the property off with confidence.",
     scope: ["Interior", "Exterior", "Before & after"],
     pairs: arregloPairs,
     gallery: [
@@ -106,7 +144,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Acoustic ceiling tear-out & reinstall",
     location: "Georgia · Schools & commercial",
     summary:
-      "Cielos acuáticos: demolemos, reinstalamos y dejamos el área limpia — incluida limpieza en sitio. Proyectos en escuelas (MLK) y en todo el estado de Georgia.",
+      "Acoustic ceilings: we tear out, reinstall, and leave the area clean — on-site cleaning included. School projects (MLK) and work statewide across Georgia.",
     scope: ["Demolition", "Reinstall", "Cleanup included"],
     pairs: [
       {
@@ -176,7 +214,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Drywall / sheetrock walls",
     location: "Georgia",
     summary:
-      "Sheetrock (drywall) — el yeso o panel que se utiliza para paredes. Instalación, acabado y entrega de superficies listas para pintar o habitar.",
+      "Sheetrock (drywall) — gypsum board for walls. Installation, finishing, and surfaces ready to paint or move into.",
     scope: ["Sheetrock", "Finishing", "Jobsite ready"],
     pairs: [
       {
@@ -213,14 +251,10 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Full-home deep clean",
     location: "Atlanta metro",
     summary:
-      "Limpieza profunda habitación por habitación — polvo, pisos, cocina y baños documentados con antes y después en cada espacio.",
+      "Room-by-room deep cleaning — dust, floors, kitchen, and baths documented with before-and-after photos in every space.",
     scope: ["Deep clean", "Room by room", "Occupied homes"],
     pairs: limpiezaCasa2Pairs,
-    gallery: [
-      assetPath("limpieza_casa_2", "antes", "casa_8.jpeg"),
-      assetPath("limpieza_casa_2", "antes", "casa_9.jpeg"),
-      assetPath("limpieza_casa_2", "antes", "casa_10.jpeg"),
-    ],
+    gallery: [assetPath("limpieza_casa_2", "antes", "casa_10.jpeg")],
   },
   {
     id: "limpieza-casa",
@@ -228,7 +262,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Living room & bedroom reset",
     location: "Georgia",
     summary:
-      "Sala y habitación infantil — superficies, pisos y detalle en muebles para un hogar listo para recibir visitas.",
+      "Living room and child's bedroom — surfaces, floors, and furniture detailing so the home is ready for guests.",
     scope: ["Living areas", "Bedrooms", "Detail"],
     pairs: [
       {
@@ -251,7 +285,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Post-construction corridor clean",
     location: "Jobsite · Georgia",
     summary:
-      "Pasillos y áreas comunes después de obra — polvo de construcción, residuos y marcas de tránsito eliminados para inspección o entrega.",
+      "Hallways and common areas after construction — construction dust, debris, and traffic marks removed for inspection or turnover.",
     scope: ["Corridors", "Dust-out", "Final clean"],
     pairs: [
       {
@@ -274,7 +308,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Floor restoration & polish",
     location: "Georgia",
     summary:
-      "Pisos tratados para recuperar brillo y uniformidad — desde preparación hasta acabado final en zonas de alto tránsito.",
+      "Floors treated to restore shine and consistency — from prep through final finish in high-traffic areas.",
     scope: ["Strip & clean", "Polish", "High traffic"],
     pairs: [1, 2, 3, 4].map((n) => ({
       id: `piso-${n}`,
@@ -290,7 +324,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Detail clean — gallery",
     location: "Georgia",
     summary:
-      "Secuencia de trabajo en residencia: cocina, baños y áreas sociales con el mismo nivel de detalle en cada visita.",
+      "Residential work across the home: kitchen, baths, and living areas with the same level of detail on every visit.",
     scope: ["Kitchen", "Baths", "Touch-ups"],
     gallery: [
       assetPath(
@@ -317,7 +351,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Interior & exterior painting",
     location: "Georgia",
     summary:
-      "Preparación de superficies y aplicación de pintura en viviendas — muros, molduras y fachadas con acabado uniforme.",
+      "Surface prep and paint for homes — walls, trim, and exteriors with an even, professional finish.",
     scope: ["Prep", "Interior", "Exterior"],
     gallery: [
       assetPath(

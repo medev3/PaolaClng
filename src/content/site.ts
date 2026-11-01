@@ -2,7 +2,7 @@ export const site = {
   businessName: "PAOLA CLEANING",
   businessShortName: "P",
   tagline: "Premium Home Cleaning · Georgia",
-  taglineSecondary: "Licensed & Insured · Residential Specialists",
+  taglineSecondary: "General Contractor · Licensed & Insured · Georgia",
   phone: "(470) 643-7144",
   phoneHref: "tel:+14706437144",
   email: "info@paolacleaningco.com",
@@ -12,17 +12,17 @@ export const site = {
     instagram: "https://www.instagram.com/pa.cleaningconstruction",
   },
   seo: {
-    title: "Paola Cleaning | Premium Home Cleaning in Georgia",
+    title: "Paola Cleaning | General Contractor & Premium Cleaning in Georgia",
     description:
-      "Elite home cleaning services for luxury living. Deep cleaning, construction clean-up, windows, laundry, and special item care across the Atlanta metro.",
+      "Licensed general contractor in Georgia. Elite home cleaning, construction clean-up, repairs, drywall, acoustic ceilings, and specialty care across the Atlanta metro.",
     ogImage: "/assets/hero_image.jpg",
   },
   hero: {
-    eyebrow: "Residential Cleaning",
+    eyebrow: "Cleaning & General Contracting",
     title: "You deserve a",
     titleAccent: "clean home",
     subtitle:
-      "Elite home cleaning services for luxury living — meticulous care for every room, every detail.",
+      "Elite home cleaning and licensed general contracting in Georgia — meticulous care for every room, every detail, and every phase of the job.",
     heroImage: "/assets/Uncompressed_Images/hero_image.jpg",
     stats: [
       { value: "300+", label: "Happy customers" },
